@@ -75,7 +75,7 @@ route.get("/", async (req, res) => {
 });
 
 //Deleting the product
-route.delete("/deleteProducts", async (req, res) => {
+route.delete("/deleteProduct", async (req, res) => {
   const { id } = req.body;
   newProduct
     .deleteOne({ _id: id })
